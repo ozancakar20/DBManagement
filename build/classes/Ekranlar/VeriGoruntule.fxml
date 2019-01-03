@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" styleClass="panel2" stylesheets="@../Kaynaklar/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ekranlar.VeriGoruntuleController">
+    <children>
+        <Label layoutX="53.0" layoutY="17.0" text="Girilen Veritabanı:" textFill="WHITE" underline="true">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txt_vtad" alignment="CENTER" editable="false" layoutX="25.0" layoutY="47.0" prefHeight="31.0" prefWidth="227.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </TextField>
+        <Label layoutX="359.0" layoutY="17.0" text="Girilen Tablo:" textFill="WHITE" underline="true">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txt_tblad" alignment="CENTER" editable="false" layoutX="308.0" layoutY="47.0" prefHeight="31.0" prefWidth="227.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </TextField>
+        <Button layoutX="759.0" layoutY="15.0" mnemonicParsing="false" onAction="#ButtonGeri" prefHeight="64.0" prefWidth="121.0" text="GERİ" textFill="RED" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="15.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="43.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Kaynaklar/bck.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TableView fx:id="tbl_veri" layoutX="22.0" layoutY="161.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="175.0" />
+        <Button layoutX="565.0" layoutY="15.0" mnemonicParsing="false" onAction="#ButtonYeniVeri" text="Yeni Veri">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Kaynaklar/Plus.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="txt_filter" layoutX="14.0" layoutY="138.0" prefHeight="30.0" prefWidth="249.0" promptText="Tüm sütun bilgilerine göre ara..." />
+        <Label alignment="CENTER" layoutX="275.0" layoutY="136.0" prefHeight="31.0" prefWidth="351.0" text="TABLODA BULUNAN VERİLER" textAlignment="CENTER" textFill="#e8e8e8" wrapText="true">
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="RED" height="25.0" radius="12.0" spread="0.5" width="25.0" />
+            </effect>
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Text fill="WHITE" layoutX="785.0" layoutY="134.0" smooth="false" stroke="RED" strokeLineCap="ROUND" strokeWidth="0.4" text="Bir veriyi silmek yada düzenlemek için sağ tıklayın." textAlignment="RIGHT" wrappingWidth="100.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="753.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Kaynaklar/info.png" />
+            </image>
+        </ImageView>
+    </children>
+
+</AnchorPane>

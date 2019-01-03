@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="263.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ekranlar.TabloOlusturController">
+    <children>
+        <Label layoutX="271.0" layoutY="14.0" text="Girilen Veritabanı:" underline="true">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txt_vtad" alignment="CENTER" editable="false" layoutX="224.0" layoutY="44.0" prefHeight="31.0" prefWidth="266.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </TextField>
+        <Label layoutX="168.0" layoutY="140.0" text="Tablo İsmi:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txt_tblad" layoutX="254.0" layoutY="137.0" prefHeight="31.0" prefWidth="266.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="57.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Kaynaklar/Warning.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="593.0" layoutY="12.0" mnemonicParsing="false" onAction="#ButtonIptal" prefHeight="64.0" prefWidth="159.0" text="İPTAL" textFill="RED" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="12.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Kaynaklar/Error.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="572.0" layoutY="239.0" mnemonicParsing="false" onAction="#ButtonKaydet" text="KAYDET" textFill="#15b500" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="14.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Kaynaklar/Tick.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="78.0" layoutY="181.0" text="Primary Key Sütun İsmi:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txt_stnad" layoutX="254.0" layoutY="178.0" prefHeight="31.0" prefWidth="266.0" promptText="Tek başına sayı olamaz!">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Label layoutX="130.0" layoutY="220.0" text="Auto Increment:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="check_inc" layoutX="254.0" layoutY="222.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="3.0" selected="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </CheckBox>
+        <ImageView fitHeight="160.0" fitWidth="171.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Kaynaklar/Database%203.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="257.0" layoutY="96.0" prefHeight="31.0" prefWidth="201.0" text="TABLO OLUŞTUR" textAlignment="CENTER">
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="RED" height="25.0" radius="12.0" spread="0.25" width="25.0" />
+            </effect>
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

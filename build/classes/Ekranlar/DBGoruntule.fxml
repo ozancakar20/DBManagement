@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="826.0" styleClass="panel2" stylesheets="@../Kaynaklar/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ekranlar.DBGoruntuleController">
+    <children>
+        <TableView fx:id="tbl_veritabani" layoutX="14.0" layoutY="386.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../Kaynaklar/style.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="148.0">
+            <columns>
+                <TableColumn fx:id="clm_name" prefWidth="791.0" styleClass="tablo" text="___ Veritabanı İsmi ___" />
+            </columns>
+        </TableView>
+        <Button layoutX="693.0" layoutY="26.0" mnemonicParsing="false" onAction="#ButtonGeri" text="GERİ" textFill="RED" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="26.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="41.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Kaynaklar/bck.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="txt_username" alignment="CENTER" editable="false" layoutX="282.0" layoutY="38.0" prefHeight="31.0" prefWidth="263.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txt_filter" layoutX="15.0" layoutY="114.0" prefHeight="31.0" prefWidth="226.0" promptText="Veritabanlarında ara..." />
+        <Label alignment="CENTER" layoutX="261.0" layoutY="112.0" prefHeight="31.0" prefWidth="305.0" text="MEVCUT VERİTABANLARI" textAlignment="CENTER" textFill="#e8e8e8" wrapText="true">
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="RED" height="25.0" radius="12.0" spread="0.5" width="25.0" />
+            </effect>
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Text fill="WHITE" layoutX="14.0" layoutY="42.0" stroke="RED" strokeLineCap="ROUND" strokeWidth="0.4" text="Çift Tık ➜ Tablolar" wrappingWidth="109.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="15.0" layoutY="58.0" stroke="RED" strokeLineCap="ROUND" strokeWidth="0.4" text="Sağ Tık ➜ 1. Tablolar" wrappingWidth="129.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="15.0" layoutY="73.0" stroke="RED" strokeLineCap="ROUND" strokeWidth="0.4" text="Sağ Tık ➜ 2. Veritabanını Sil" wrappingWidth="162.02734375">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="144.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Kaynaklar/info.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
