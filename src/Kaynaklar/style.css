@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16.Ara.2018, 17:44:50
+    Author     : Ozan
+*/
+
+.panel{
+    -fx-background-image: url(code.jpg);
+    -fx-background-size: cover;
+}
+.panel2{
+    -fx-background-image: url(bgEdit.jpg);
+    -fx-background-size: cover;
+}
+.panel3{
+-fx-background-image: url(addcolumn.png);
+-fx-background-size: cover;
+}
+.tablo{
+    -fx-alignment: CENTER;
+}
